@@ -3,9 +3,48 @@ body {
     min-height: 400px;
 }
 
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  alignItems: center;
+}
+
 .popup-padded {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
+
+/*
+ *
+ * Login
+ */
+
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+
+  .input-f {
+    border: none;
+    background: #ececec;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 23px;
+  }
+
+  .input-f:focus {
+    outline: none;
+    border: none;
+  }
+  .login-container {
+    position: absolute;
+    /* width: 100%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }

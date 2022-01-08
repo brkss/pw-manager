@@ -1,4 +1,6 @@
 import * as React from "react";
+import { Login } from "./Login";
+
 export const App: React.FC = () => {
   React.useEffect(() => {
     chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
@@ -8,8 +10,8 @@ export const App: React.FC = () => {
     });
   }, []);
   return (
-    <div>
-      <h2>Hello World !</h2>
+    <div className={"container"}>
+      <Login />
     </div>
   );
 };
