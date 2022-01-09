@@ -34,17 +34,34 @@ body {
     background: #ececec;
     padding: 5px;
     border-radius: 5px;
-    font-size: 23px;
+    font-size: 17px;
   }
 
   .input-f:focus {
     outline: none;
     border: none;
   }
-  .login-container {
+  .login-container, .center {
     position: absolute;
     /* width: 100%; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
   }
+
+  /*
+   *
+   * Status
+   *
+   */
+
+  .dot {
+        display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: green;
+    border-radius: 100%;
+    margin-right: 9px;
+    border: 3px solid #89f389;
+    margin-bottom: -2px;
+  }  

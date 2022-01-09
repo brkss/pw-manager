@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Login } from "./Login";
+import { Status } from "./Status";
 
 export const App: React.FC = () => {
   React.useEffect(() => {
@@ -11,7 +12,7 @@ export const App: React.FC = () => {
   }, []);
   return (
     <div className={"container"}>
-      <Login />
+      <Status />
     </div>
   );
 };
